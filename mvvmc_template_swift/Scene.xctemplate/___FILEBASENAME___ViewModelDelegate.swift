@@ -5,6 +5,10 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___: class {
+protocol ___VARIABLE_sceneName___ViewModelCoordinatorDelegate: class {
+
+}
+
+protocol ___VARIABLE_sceneName___ViewModelViewDelegate: class {
 
 }

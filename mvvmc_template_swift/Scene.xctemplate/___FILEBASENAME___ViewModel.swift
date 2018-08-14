@@ -6,6 +6,6 @@
 import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___ {
-    weak var coordinatorDelegate: ___VARIABLE_sceneName___ViewModelDelegate?
+    weak var coordinatorDelegate: ___VARIABLE_sceneName___ViewModelCoordinatorDelegate?
     weak var viewDelegate: ___VARIABLE_sceneName___ViewModelViewDelegate?
 }

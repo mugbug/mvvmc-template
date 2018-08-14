@@ -7,11 +7,17 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    @IBOutlet weak var contentView: ___VARIABLE_sceneName___View!
+    var contentView: ___VARIABLE_sceneName___View?
     var viewModel: ___VARIABLE_sceneName___ViewModel?
+
+    override func loadView() {
+        super.loadView()
+        contentView = ___VARIABLE_sceneName___View(frame: .zero)
+        view = contentView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentView.viewModel = viewModel
+        contentView?.viewModel = viewModel
     }
 }
