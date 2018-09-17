@@ -20,4 +20,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         super.viewDidLoad()
         contentView?.viewModel = viewModel
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
 }

@@ -22,10 +22,6 @@ class ___FILEBASENAMEASIDENTIFIER___: PushedCoordinator {
         viewController.viewModel = viewModel
         return viewController
     }
-
-    func toUpdateIsNavigationBarHidden() -> Bool? {
-        return false
-    }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_sceneName___ViewModelCoordinatorDelegate {
