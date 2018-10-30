@@ -11,7 +11,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     var viewModel: ___VARIABLE_sceneName___ViewModel?
 
     override func loadView() {
-        super.loadView()
         contentView = ___VARIABLE_sceneName___View(frame: .zero)
         view = contentView
     }
