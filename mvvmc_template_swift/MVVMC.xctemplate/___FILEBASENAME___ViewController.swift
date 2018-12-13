@@ -7,21 +7,29 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    var contentView: ___VARIABLE_sceneName___View?
-    var viewModel: ___VARIABLE_sceneName___ViewModel?
+    var contentView: ___VARIABLE_sceneName___View
+    var viewModel: ___VARIABLE_sceneName___ViewModel
 
-    override func loadView() {
-        contentView = ___VARIABLE_sceneName___View(frame: .zero)
-        view = contentView
+    init(viewModel: ___VARIABLE_sceneName___ViewModel) {
+        self.viewModel = viewModel
+        self.contentView = ___VARIABLE_sceneName___View(viewModel: viewModel)
+        super.init(nibName: nil, bundle: nil)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        contentView?.viewModel = viewModel
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func loadView() {
+        view = contentView
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = false
+        setupNavigation()
+    }
+
+    func setupNavigation() {
+        navigationController?.isNavigationBarHidden = false
     }
 }

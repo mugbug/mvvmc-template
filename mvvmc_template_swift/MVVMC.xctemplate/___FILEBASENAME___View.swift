@@ -5,25 +5,33 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIView, NibDesignable {
+class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
-    var viewModel: ___VARIABLE_sceneName___ViewModel? {
-        didSet {
-            viewModel?.viewDelegate = self
-        }
-    }
+    private var viewModel: ___VARIABLE_sceneName___ViewModel
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        loadNib()
+    init(viewModel: ___VARIABLE_sceneName___ViewModel) {
+        self.viewModel = viewModel
+        super.init(frame: .zero)
+        self.viewModel.viewDelegate = self
+        buildView()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        loadNib()
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_sceneName___ViewModelViewDelegate {
 
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: ViewCodeProtocol {
+
+    func setupHierarchy() {
+
+    }
+
+    func setupConstraints() {
+
+    }
 }

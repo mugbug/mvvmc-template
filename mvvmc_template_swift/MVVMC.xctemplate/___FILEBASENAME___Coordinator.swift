@@ -16,11 +16,13 @@ class ___FILEBASENAMEASIDENTIFIER___: PushedCoordinator {
     }
 
     func loadViewController() -> UIViewController {
-        let viewController = ___VARIABLE_sceneName___ViewController()
-        let viewModel = ___VARIABLE_sceneName___ViewModel()
-        viewModel.coordinatorDelegate = self
-        viewController.viewModel = viewModel
+        let viewModel = ___VARIABLE_sceneName___ViewModel(coordinatorDelegate: self)
+        let viewController = ___VARIABLE_sceneName___ViewController(viewModel: viewModel)
         return viewController
+    }
+
+    func toUpdateIsBottomBarHidden() -> Bool? {
+        return true
     }
 }
 

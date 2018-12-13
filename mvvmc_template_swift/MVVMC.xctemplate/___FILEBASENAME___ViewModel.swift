@@ -8,4 +8,8 @@ import UIKit
 class ___FILEBASENAMEASIDENTIFIER___ {
     weak var coordinatorDelegate: ___VARIABLE_sceneName___ViewModelCoordinatorDelegate?
     weak var viewDelegate: ___VARIABLE_sceneName___ViewModelViewDelegate?
+
+    init(coordinatorDelegate: ___VARIABLE_sceneName___ViewModelCoordinatorDelegate) {
+        self.coordinatorDelegate = coordinatorDelegate
+    }
 }
