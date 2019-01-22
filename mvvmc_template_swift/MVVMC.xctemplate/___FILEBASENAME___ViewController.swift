@@ -7,8 +7,8 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    var contentView: ___VARIABLE_sceneName___View
-    var viewModel: ___VARIABLE_sceneName___ViewModel
+    private let contentView: ___VARIABLE_sceneName___View
+    private let viewModel: ___VARIABLE_sceneName___ViewModel
 
     init(viewModel: ___VARIABLE_sceneName___ViewModel) {
         self.viewModel = viewModel
